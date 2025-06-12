@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:id="@+id/welcomeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Welcome, User!"
+            android:textSize="24sp"
+            android:textColor="@color/black" />
+
+        <!-- Locations Label -->
+        <TextView
+            android:id="@+id/locationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select Locations:"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <!-- Location RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/locationRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Bride Dresses -->
+        <TextView
+            android:id="@+id/dressLabel1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select Bride Dresses:"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/dressRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Groom Dresses -->
+        <TextView
+            android:id="@+id/dressLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Select Groom Dresses:"
+            android:textSize="20sp"
+            android:textColor="@color/black" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/menDressRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <!-- Guest Count -->
+        <EditText
+            android:id="@+id/editTextGuestCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="Enter guest count"
+            android:inputType="number"
+            android:padding="12dp" />
+
+        <!-- Calculate & Catering Buttons -->
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Calculate"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/buttonCatering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Catering"
+            android:padding="16dp" />
+
+        <!-- Estimated Cost -->
+        <TextView
+            android:id="@+id/textViewEstimatedCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Estimated Cost: $0"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Selected Options -->
+        <TextView
+            android:id="@+id/textViewSelectedOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</ScrollView>
